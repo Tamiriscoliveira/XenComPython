@@ -8,7 +8,7 @@ import mysql.connector
 
 # try:
 ip = 0
-lista = ['0.0.0.0', '0.0.0.0', '0.0.0.0', '0.0.0.0', '0.0.0.0', '0.0.0.0']
+lista = ['0.0.0.0', '0.0.0.0', '0.0.0.0', '0.0.0.0', '0.0.0.0', '0.0.0.0'] #local para os IP dos hosts
 for ip in lista:
     session = XenAPI.Session(f'http://{ip}')
     session.login_with_password("usuer", "senha")

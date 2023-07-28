@@ -11,7 +11,7 @@ ip = 0
 lista = ['0.0.0.0', '0.0.0.0', '0.0.0.0', '0.0.0.0', '0.0.0.0', '0.0.0.0'] #local para os IP dos hosts
 for ip in lista:
     session = XenAPI.Session(f'http://{ip}')
-    session.login_with_password("usuer", "senha")
+    session.login_with_password("user", "senha")
 
     # conexão com host hypervisor
     host = session.xenapi.host.get_all()[0]
